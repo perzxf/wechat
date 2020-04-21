@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zcf.mapper.WechatUserMapper">
+
+    <select id="selectBySceneStr" resultType="com.zcf.entity.WechatUser">
+        select * from  wechat_user where qr_scene_str = #{value}
+    </select>
+</mapper>
